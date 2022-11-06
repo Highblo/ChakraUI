@@ -1,14 +1,14 @@
 import { Heading, Highlight } from "@chakra-ui/react";
 
-export const CHighlight = () => {
+export const CHighlight = (props) => {
+  const { query, styles, children } = props;
   return (
-    <Heading size="md">
+    <Heading size="xl">
       <Highlight 
-        query={["query", "styles"]}
-        styles={{color: "orange.100" }}
+        query={query}
+        styles={styles}
       >
-        Highlight
-        props: query="強調するテキスト"styles="スタイルをあてる"
+        {children}
       </Highlight>
     </Heading>
   );
