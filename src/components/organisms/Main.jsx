@@ -1,21 +1,14 @@
 import { Box, Center, Heading, Stack, Text } from "@chakra-ui/react";
 import { WhiteBox } from "../WhiteBox";
+import { Description } from "./Description";
 
 export const Main = () => {
   return (
-    <Stack spacing={4} w="70%" m="0 auto">
-      <WhiteBox>
-        <Box bg="orange.400">Box</Box>
-      </WhiteBox>
-      <WhiteBox>
-        <Heading bg="orange.400">Heading</Heading>
-      </WhiteBox>
-      <WhiteBox>
-        <Text bg="orange.400">Text</Text>
-      </WhiteBox>
-      <WhiteBox>
-        <Center bg="orange.400">Center</Center>
-      </WhiteBox>
-    </Stack>
+    <Box flex="2" pt={10} pl={4} pr={8}>
+      <Description
+        com="Box"
+        text="Box is the most abstract component on top of which all other Chakra UI components are built. By default, it renders a `div` element"
+      />
+    </Box>
   );
 };

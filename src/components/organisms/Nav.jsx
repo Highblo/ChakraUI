@@ -1,4 +1,4 @@
-import { Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 
 import { Category } from "../atoms/Category";
 
@@ -19,15 +19,17 @@ export const Nav = () => {
     "Textarea",
   ];
   return (
-    <Stack spacing={3} p={3}>
-      <Category text="LAYOUT" />
-      {layout.map((item) => (
-        <Text>{item}</Text>
-      ))}
-      <Category text="FORMS" />
-      {forms.map((item) => (
-        <Text>{item}</Text>
-      ))}
-    </Stack>
+    <Box h="88vh" flex="0.7">
+      <Stack spacing={3} p={3}>
+        <Category text="LAYOUT" />
+        {layout.map((item) => (
+          <Text>{item}</Text>
+        ))}
+        <Category text="FORMS" />
+        {forms.map((item) => (
+          <Text>{item}</Text>
+        ))}
+      </Stack>
+    </Box>
   );
 };
