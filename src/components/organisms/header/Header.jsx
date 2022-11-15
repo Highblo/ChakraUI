@@ -1,8 +1,18 @@
 import { AtSignIcon } from "@chakra-ui/icons";
-import { Box, Container, Flex, Heading, Input } from "@chakra-ui/react";
-import { Icons } from "../molcules/Icons";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Input,
+  useDisclosure,
+} from "@chakra-ui/react";
+
+import { Icons } from "../../molcules/Icons";
+import { InputModal } from "./InputModal";
 
 export const Header = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box py={3} mb={4}>
       <Container maxW="8xl" display="flex" alignItems="center">
@@ -17,10 +27,12 @@ export const Header = () => {
             bg="gray.700"
             border="none"
             mr={10}
+            onClick={onOpen}
           />
           <Icons />
         </Flex>
       </Container>
+      <InputModal isOpen={isOpen} onClose={onClose} />
     </Box>
   );
 };

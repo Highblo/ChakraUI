@@ -1,0 +1,26 @@
+export const Categories = {
+  layout: ["Box", "Center", "Container", "Flex", "Grid", "Stack"],
+  forms: [
+    "Button",
+    "Checkbox",
+    "Editable",
+    "Form Control",
+    "Icon Button",
+    "Input",
+    "Radio",
+    "Range Slider",
+    "Select",
+    "Slider",
+    "Switch",
+    "Textarea",
+  ],
+  overlay: ["Alert Dialog", "Drawer", "Menu", "Modal", "Popover", "Tooltip"],
+  feedback: [
+    "Alert",
+    "Circular Progress",
+    "Progress",
+    "Skeleton",
+    "Spinner",
+    "Toast",
+  ],
+};

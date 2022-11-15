@@ -4,8 +4,8 @@ import { Box, Button, Heading, HStack, Text } from "@chakra-ui/react";
 export const Description = (props) => {
   const { com, text } = props;
   return (
-    <Box>
-      <Heading mb={6}>{com}</Heading>
+    <Box mb={6}>
+      <Heading mb={8}>{com}</Heading>
       <Text mb={5}>{text}</Text>
       <HStack spacing={4}>
         <Button

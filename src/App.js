@@ -1,9 +1,9 @@
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { theme } from "./theme/theme";
-import { Header } from "./components/organisms/Header";
+import { Header } from "./components/organisms/header/Header";
 import { MainContents } from "./components/templates/MainContents";
-import { Info } from "./components/atoms/Info";
+import { Info } from "./components/molcules/Info";
 
 function App() {
 

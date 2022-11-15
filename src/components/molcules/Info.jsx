@@ -9,7 +9,9 @@ export const Info = () => {
           Build faster with Premium Chakra UI Components
           <InfoIcon ml={1} color="cyan.400" />
         </Text>
-        <Button size="sm" color="white" bg="rgba(0, 0, 0, 0.2)">Learn more</Button>
+        <Button size="sm" color="white" bg="rgba(0, 0, 0, 0.2)">
+          Learn more
+        </Button>
       </Flex>
     </Box>
   );
